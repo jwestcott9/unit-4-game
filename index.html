@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/starwars.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+ 
+
+  
+  </head>
+  
+  <body>
+      <audio controls>
+          <source src="../unit-4-game/assets/Star Wars Theme [8 Bit Tribute to John Williams] - 8 Bit Universe.mp3" id="audio" type="audio/ogg">
+        </audio>
+<h1> Star Wars RPG The light Side</h1>
+<h4 id="chooseYourCharacter"> Choose your Character</h4>
+<div class="chooseCharacterRow row">
+<div class="card startCharacter chooseCharacterRow " id="luke" >
+    <img class="card-img-top" src="../unit-4-game/assets/images/YoungLuke.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text" id="LukeHp">The young jedi will be the most challenging character to play. Luke has low initial attack but he will gain levels quickly</p>
+    </div>
+  </div>
+  <div class="card startCharacter chooseCharacterRow" id="maceWindu">
+      <img class="card-img-top" src="../unit-4-game/assets/images/MaceWindu.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text" id="maceWinduHp">Mace MaceWindu is one of the most skilled fighting jedi. He will start with a high attack and will progress quickly.</p>
+      </div>
+    </div>
+    <div class="card startCharacter chooseCharacterRow " id="yoda" >
+    <img class="card-img-top" src="../unit-4-game/assets/images/yoda-810x456.jpg" alt="Card image cap">
+    <div class="card-body"id="yodaHp">
+    <p class="card-text">yoda is the master of perception, not combat, he does however have the chance to done a large amount of damage at once.</p>
+  </div>
+</div>
+<div class="card startCharacter chooseCharacterRow" id ="obiWan">
+    <img class="card-img-top" src="../unit-4-game/assets/images/Ewan-McGregor-as-Obi-Wan-014.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text"id="obiWanHp">Master Obi Wan is a worthy adversary and wil put up a good fight against all oponents</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="yourCharacter row"><h3>Your Character</h3></div> 
+<div> <h4 id="enemiesToFight">Enemies to Fight</h4>
+    
+        <div class="row blank">
+          <div class="col-md-6 blank"> </div>
+        </div>
+  
+  <div class="row firstround">
+    <div class="card firstTier" id="stormTrooper" >
+    <img class="card-img-top" src="../unit-4-game/assets/images/stormTrooper.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text " id="stormTrooperHp">80</p>
+      <p class= "card-text" id="stormTrooperAp"></p>
+    </div>
+  </div>
+  <div class="card firstTier" id="jangFet">
+      <img class="card-img-top" src="../unit-4-game/assets/images/jangFet.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text" id="jangFetHp">120</p>
+        <p class= "card-text" id="jangFetAp"></p>
+      </div>
+    </div>
+    <div class="card firstTier"id="captainPhasma" >
+        <img class="card-img-top" src="../unit-4-game/assets/images/captainPhasma.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" id="captainPhasmaHp">150</p>
+          <p class= "card-text" id="captainPhasmaAp"></p>
+        </div>
+      </div>
+      <div class="card firstTier"id="royalGuard" >
+          <img class="card-img-top" src="../unit-4-game/assets/images/35615557165_0d7924cc4a_b.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text " id="royalGuardHp">200</p>
+            <p class= "card-text" id="royalGuardAp"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="row secondround">
+        <div class="row blank">
+          <div class="col-md-6 blank"> </div>
+        </div>
+        <div class="card secondTier" id="kyloRen" >
+        <img class="card-img-top" src="../unit-4-game/assets/images/Kylo ren.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" id="kyloRenHp">200</p>
+          <p class= "card-text" id="kyloRenAp"></p>
+        </div>
+      </div>
+      <div class="card secondTier" id="darthVader" >
+          <img class="card-img-top" src="../unit-4-game/assets/images/DarthVader.webp" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" id="darthVaderHp">500</p>
+            <p class= "card-text" id="darthVaderAp"></p>
+          </div>
+        </div>
+        <div class="card secondTier" id="darthSidius" >
+            <img class="card-img-top" src="../unit-4-game/assets/images/darth-Sidius.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" id="darthSidiusHp">1000</p>
+              <p class= "card-text" id="darthsidiusAp"></p>
+            </div>
+          </div>
+          <div class="card secondTier" id="snoke" >
+              <img class="card-img-top" src="../unit-4-game/assets/images/Snoke.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" id="snokeHp">1500</p>
+                <p class= "card-text" id="snokeAp"></p>
+              </div>
+              </div>
+              </div>
+
+              <h4> Enemy</h4>
+<div class="enemy">
+
+</div>
+<div id="alert"> ... </div>
+<button type="button" class="btn btn-danger">Attack</button>
+
+
+</body>
+
+
+<script type="text/javascript" src="../unit-4-game/assets/javascript/starwars.js"></script>
+</html>

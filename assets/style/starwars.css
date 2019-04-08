@@ -1,0 +1,71 @@
+#start-right {
+    background-image: url('../images/jediorder.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn{
+    height: 400px;
+}
+
+body{
+    background: url('/04-Homework/unit-4-game/assets/images/jediorder.webp');
+}
+
+.card-img-top{
+    height: 100px;
+    width: 177px;
+    box-sizing: border-box;
+    
+}
+.card{
+  width:177px;
+  margin: 20px;
+}
+
+.btn {
+    width: 200px;
+    height: 100px;
+}
+
+.blank {
+    height: 100px;
+}
+
+.charstyle {
+    background: skyblue;
+}
+
+.deadChar {
+    background: red;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8pt;
+    background: url(https://i.pinimg.com/originals/f8/1a/27/f81a276d807fbc8899b5662d99d69d22.jpg)
+}
+
+h1 {
+    color: blanchedalmond;
+}
+
+h4 {
+    color: blanchedalmond;
+}
+h3 {
+    color: blanchedalmond;
+}
+
+#alert {
+    color: blanchedalmond;
+}
+audio{
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+/* .div-card-body{
+    width: 
+} */
